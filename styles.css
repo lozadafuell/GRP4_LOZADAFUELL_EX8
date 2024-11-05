@@ -56,18 +56,18 @@ main {
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url('luxury-watch3-jpg.png'); 
+    color: #ffffff;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    position: sticky;
+    position: sticky;text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), -2px -2px 4px rgba(255, 255, 255, 0.5);
 }
 
 header {
-    background-color: #007bff;
+    background-color: #D4AF37;
     color: #fff;
     padding: 1.5rem;
     text-align: center;
@@ -77,9 +77,14 @@ header {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.navbar h1 {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+}
+
 header h1 {
     font-size: 1.8rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 2rem;
 }
 
 nav ul {
@@ -105,7 +110,8 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a.active {
-    background-color: #0056b3;
+    background-color: #887023;
+    text-decoration: none;
 }
 
 main {
@@ -118,23 +124,56 @@ main {
 
 h2 {
     font-size: 1.5rem;
-    color: #007bff;
+    color: #D4AF37;
     margin-bottom: 1rem;
+    margin-top: 3rem;
+}
+
+p {
+    font-family: "Mukta", sans-serif;
+    font-weight: 500;
+    white-space: pre;
+    text-align: center;
+    position: sticky;text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), -2px -2px 4px rgba(255, 255, 255, 0.5);
+}
+
+.box-container p {
+    font-size: 24px;
+    padding-bottom: 60.5vh;
+    margin-bottom: 5px;
+}
+
+.box-container {
+    background-color: #333;
+    height: auto;
+    width: auto;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 5px 5px 5px 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgba(24, 19, 19, 0.8);
 }
 
 form {
     background-color: #fff;
     padding: 2rem;
+    border: 2px solid #ccc;
     border-radius: 8px;
+    margin-top: 5rem;
+    width: 60vh;
+    margin-left: 75vh;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 1rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgba(24, 19, 19, 0.8);
 }
 
 form label {
     font-weight: 600;
     display: block;
     margin-top: 1rem;
-    color: #333;
+    color: #ffffff;
 }
 
 form input[type="text"],
@@ -155,7 +194,7 @@ form input[type="password"]:focus {
 }
 
 form button[type="submit"] {
-    background-color: #007bff;
+    background-color: #D4AF37;
     color: #fff;
     padding: 0.8rem 1.2rem;
     border: none;
@@ -168,7 +207,7 @@ form button[type="submit"] {
 }
 
 form button[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #887023;
 }
 
 form label input[type="checkbox"] {
