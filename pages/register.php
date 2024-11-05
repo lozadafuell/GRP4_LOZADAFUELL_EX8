@@ -11,7 +11,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     try {
         $stmt->execute(['username' => $username, 'password' => $hashedPassword]);
         
-        // Redirect to login page with success message
         header("Location: index.php?page=login&message=Registration successful! Please log in.");
         exit;
     } catch (PDOException $e) {
