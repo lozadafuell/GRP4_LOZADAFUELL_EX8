@@ -2,7 +2,7 @@
 include __DIR__ . '/../includes/db.php';
 
 $username = $_COOKIE['username'] ?? '';
-$message = $_GET['message'] ?? ''; // Retrieve the success message if set
+$message = $_GET['message'] ?? '';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = htmlspecialchars($_POST['username'], ENT_QUOTES, 'UTF-8');
@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <h2>Login</h2>
 <?php 
-if (!empty($message)) echo "<p style='color:green;'>$message</p>"; // Show registration success message
+if (!empty($message)) echo "<p style='color:green;'>$message</p>";
 if (!empty($error)) echo "<p style='color:red;'>$error</p>"; 
 ?>
 <form action="" method="post">
