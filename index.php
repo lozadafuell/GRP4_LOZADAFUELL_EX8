@@ -5,7 +5,6 @@ $page = $_GET['page'] ?? 'home';
 $pageTitle = ucfirst($page);
 $currentPage = $page;
 
-// Add 'register' to the list of allowed pages
 $allowedPages = ['home', 'about', 'contact', 'login', 'register'];
 
 include 'includes/header.php';
