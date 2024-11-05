@@ -1,7 +1,9 @@
 <header>
-    <h1>Welcome to AURELE</h1>
+    <div class='navbar'>
+    <h1>AURELE<br></h1>
     <nav>
         <ul>
+            <p><br></p>
             <li><a href="index.php?page=home" class="<?php echo $currentPage == 'home' ? 'active' : ''; ?>">Home</a></li>
             <li><a href="index.php?page=about" class="<?php echo $currentPage == 'about' ? 'active' : ''; ?>">About</a></li>
             <li><a href="index.php?page=contact" class="<?php echo $currentPage == 'contact' ? 'active' : ''; ?>">Contact</a></li>
@@ -13,4 +15,5 @@
             <?php endif; ?>
         </ul>
     </nav>
+    </div>
 </header>
